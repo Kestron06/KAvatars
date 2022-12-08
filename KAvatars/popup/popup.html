@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Popup - KAvatars</title>
+        <link href="popup.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <button id="toggle">Instructions</button>
+        <hr>
+        <div id="main">
+            <form action="https://kavatars-backend.kestron.repl.co/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="avatar" id="avatar" accept="image/*"><input name="kaas" id="kaas" type="hidden"><input type='submit' id="submit">
+            </form><br>
+            <button id="delete">Delete Avatar</button>
+        </div>
+        <div id="instr" style="display:none;">
+            <h3>Uploading</h3>
+            <p>
+                Click Choose File to find a file on your computer containing the avatar you wish to use. Then click Submit.<br>
+                It is highly recommended that you set a username, as this will make your homepage much more reliable when it comes to showing up.
+            </p>
+            <h3>Removing</h3>
+            <p>
+                Click Delete Avatar, and it will delete. Pretty simple, eh?
+            </p>
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

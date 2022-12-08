@@ -1,0 +1,34 @@
+{
+    "name":"KAvatars",
+    "version":"0.1",
+    "manifest_version":3,
+    "description":"Custom avatars for Khan Academy",
+    "icons":{
+        "16":"icons/avatar-team.png"
+    },
+    "action":{
+        "default_popup":"popup/popup.html"
+    },
+    "host_permissions": [
+        "https://www.khanacademy.org/*"
+    ],
+    "content_scripts":[
+        {
+            "matches":[
+                "https://www.khanacademy.org/*"
+            ],
+            "js": ["injected.js"],
+            "run_at":"document_end"
+        }
+    ],
+    "web_accessible_resources":[
+        {
+            "resources":["images/*.*"],
+            "matches":["<all_urls>"]
+        }
+    ],
+    "permissions": [
+        "storage",
+        "cookies"
+    ]
+}
