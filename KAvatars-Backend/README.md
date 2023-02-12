@@ -1,1 +1,1 @@
-Not ready yet! When it is, this will provide all of the backend for custom avatars on Khan Academy.
+Provides all of the backend for custom avatars on Khan Academy.
